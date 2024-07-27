@@ -42,9 +42,16 @@ public class AddressBook {
 
         }
         return false;
+    }
+    public boolean deleteContact(String firstName,String lastName) {
+        Contact contact = findContactByName(firstName, lastName);
+        if (contact != null) {
+            contacts.remove(contact);
+            return true;
+        }
+        return false;
 
     }
-
 }
 
 

@@ -12,7 +12,8 @@ public class Main {
             System.out.println("1.Add a new Contact");
             System.out.println("2. Display all contacts");
             System.out.println("3.Edit a contact");
-            System.out.println("4. Exit");
+            System.out.println("4.Delete a contact");
+            System.out.println("5. Exit");
             int choice=sc.nextInt();
             sc.nextLine();
             switch (choice){
@@ -68,7 +69,23 @@ public class Main {
                             Contact updatedContact=new Contact(newFirstName,newLastName,newAddress,newCity,newState,newZip,newPhoneNumber,newEmail);
                             addressBook.editContact(editFirstName,editLastName,updatedContact);
                             }
+                    else{
+                        System.out.println("Contact Not found");
+                    }
+                    break;
                 case 4:
+                    System.out.println("enter the first name of the person to delete");
+                    String deleteFirstName=sc.nextLine();
+                    System.out.println("enter the last name of the person to delete");
+                    String deleteLastName=sc.nextLine();
+                    if(addressBook.deleteContact(deleteFirstName,deleteLastName)){
+                        System.out.println("Contact deleted successfully");
+                    }
+                    else{
+                        System.out.println("contact not found");
+                    }
+                    break;
+                case 5:
                     exit=true;
                     break;
                 default:
