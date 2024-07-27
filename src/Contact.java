@@ -5,7 +5,7 @@ public class Contact {
     String city;
     String state;
     String zip;
-    String phoneNUmber;
+    String phoneNumber;
     String email;
 
     public Contact(String firstName, String lastName, String address, String city, String state, String zip, String phoneNUmber, String email) {
@@ -15,7 +15,7 @@ public class Contact {
         this.city = city;
         this.state = state;
         this.zip = zip;
-        this.phoneNUmber = phoneNUmber;
+        this.phoneNumber = phoneNUmber;
         this.email = email;
     }
 
@@ -44,7 +44,7 @@ public class Contact {
     }
 
     public String getPhoneNUmber() {
-        return phoneNUmber;
+        return phoneNumber;
     }
 
     public String getEmail() {
@@ -76,7 +76,7 @@ public class Contact {
     }
 
     public void setPhoneNUmber(String phoneNUmber) {
-        this.phoneNUmber = phoneNUmber;
+        this.phoneNumber = phoneNUmber;
     }
 
     public void setEmail(String email) {
@@ -92,7 +92,7 @@ public class Contact {
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", zip='" + zip + '\'' +
-                ", phoneNUmber='" + phoneNUmber + '\'' +
+                ", phoneNUmber='" + phoneNumber + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }
