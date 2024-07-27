@@ -8,14 +8,14 @@ public class Contact {
     String phoneNumber;
     String email;
 
-    public Contact(String firstName, String lastName, String address, String city, String state, String zip, String phoneNUmber, String email) {
+    public Contact(String firstName, String lastName, String address, String city, String state, String zip, String phoneNumber, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
         this.city = city;
         this.state = state;
         this.zip = zip;
-        this.phoneNumber = phoneNUmber;
+        this.phoneNumber = phoneNumber;
         this.email = email;
     }
 
@@ -43,7 +43,7 @@ public class Contact {
         return zip;
     }
 
-    public String getPhoneNUmber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
@@ -75,8 +75,8 @@ public class Contact {
         this.zip = zip;
     }
 
-    public void setPhoneNUmber(String phoneNUmber) {
-        this.phoneNumber = phoneNUmber;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public void setEmail(String email) {
